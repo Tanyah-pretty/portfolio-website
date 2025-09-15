@@ -1,0 +1,245 @@
+body{
+  margin:100px;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  background-color: #4de2d3;
+  /*color: rgb(7, 2, 53);*/
+}
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 0px;
+   background-color: rgb(2, 2, 34);
+   color:#05c6f1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d40075;
+}
+img{
+  max-width: 600px;
+  height:auto;
+  aspect-ratio: 3/4;
+
+}
+
+.container-picture {
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.glow-profile {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid transparent;
+  background-image: linear-gradient(135deg, #6a11cb, #f217bf);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 20px rgba(145, 74, 222, 0.6), 0 0 40px rgba(45, 214, 244, 0.971);
+}
+
+.container-content {
+  margin-top: 0;
+  gap: 20px;
+  max-width: 600px;
+}
+.a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e3f;
+  color: #fff;
+}
+
+.send-btn {
+  background-color: #00ffff;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+.contact-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.home{
+  background-color: rgb(2, 2, 34);
+  color:#05c6f1;
+  position:relative;
+  width:100%;
+  justify-content: centre;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.home-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding:0 50px;
+}
+.home-content{
+  max-width: 600px;
+  flex: 1;
+  text-align: left;
+}
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.home-content p{
+  font-size: 20px;
+  color: #1e74b6;
+  margin: 10px 0 20px;
+}
+.home-sci{
+  display : flex;
+  gap: 20px;
+  width: 40px;
+  height: 40px;
+ font-size: 20px;
+  color: #eff1f2;
+  margin: 30px 15px 30px 0;
+}
+.icon-ring{
+  color: #eff1f2;
+  border: 2px solid #05c6f1;
+  border-radius: 50%;
+  padding: 10px;
+}
+.home-sci a:hover{
+  background: #67dad8;
+  color: #080808;
+  box-shadow: #07e4eb 0px 0px 20px;
+}
+.btn-box{
+  display: inline-block;
+  padding: 12px 28px;
+  background:#05c6f1 ;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #080808;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.btn-box:hover{
+  box-shadow: #4de2d3 0px 0px 5px,
+ #4de2d3 0px 0px 25px, #4de2d3 0px 0px 50px,
+ #4de2d3 0px 0px 100px, #4de2d3 0px 0px 200px;
+}
+.profile-container {
+  flex: 1;
+  justify-content: flex-end;
+  margin-top: 40px;
+  display: flex;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid transparent;
+  background-image: linear-gradient(to right, #27c4c9, #2575fc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
