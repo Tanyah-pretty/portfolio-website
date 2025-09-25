@@ -224,6 +224,19 @@ input, textarea {
   background-clip: content-box, border-box;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+.toggle-btn {
+  background-color: #1f056e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.toggle-btn:hover {
+  background-color: #0a8dde;
+}
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -242,4 +255,5 @@ input, textarea {
     margin-top: 1rem;
   }
 }
+
 
